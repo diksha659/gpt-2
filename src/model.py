@@ -1,8 +1,8 @@
 import numpy as np
 import tensorflow as tf
-from tensorboard.plugins.hparams import api as hp
+from tensorboard.plugins.hparams import api as hparams
 def default_hparams():
-    return hp.HParam(
+    return hparams(
         n_vocab=0,
         n_ctx=1024,
         n_embd=768,
